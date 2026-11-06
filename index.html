@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TORQ FITNESS | Premium Gym in Salkia, Howrah</title>
+  <meta name="description" content="TORQ FITNESS, Salkia, Howrah. Strength training, cardio, muscle building, weight loss, personal training and customised diet charts. Plans from ₹1399/month. Book your free trial on WhatsApp." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo"><img src="assets/img/logo-transparent.png" alt="TORQ FITNESS" /></div>
+      <div class="preloader__bar"><span></span></div>
+      <p class="preloader__text">Loading strength<span class="dots">...</span></p>
+    </div>
+  </div>
+
+  <!-- custom cursor (desktop only) -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo" aria-label="TORQ FITNESS home">
+        <img src="assets/img/logo-transparent.png" alt="TORQ FITNESS logo" />
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#results">Results</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#bmi">BMI</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="btn btn--red nav__cta-mobile js-wa" data-msg="Hi TORQ FITNESS! I'd like to book a FREE TRIAL session.">Book Free Trial</a>
+        <div class="nav__drawer-info">
+          Salkia, Howrah<br />
+          <a href="tel:+918336044261">+91 83360 44261</a><br />
+          <a href="tel:+919874989937">+91 98749 89937</a>
+        </div>
+      </nav>
+      <a href="#" class="btn btn--red nav__cta js-wa magnetic" data-msg="Hi TORQ FITNESS! I'd like to book a FREE TRIAL session.">
+        <span>Free Trial</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero__slides">
+        <div class="hero__slide is-active" style="background-image:url('assets/img/gym11.webp')"></div>
+        <div class="hero__slide" style="background-image:url('assets/img/gym13.webp')"></div>
+        <div class="hero__slide" style="background-image:url('assets/img/gym9.webp')"></div>
+        <div class="hero__slide" style="background-image:url('assets/img/gym2.webp')"></div>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__grain"></div>
+      <div class="hero__slash"></div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal-hero" style="--d:.1s"><span class="pulse-dot"></span> Salkia, Howrah · Now Open</p>
+        <h1 class="hero__title">
+          <span class="line"><span class="word" style="--d:.2s">BUILD</span></span>
+          <span class="line"><span class="word" style="--d:.35s">YOUR</span> <span class="word word--red" style="--d:.5s">TORQ.</span></span>
+        </h1>
+        <p class="hero__sub reveal-hero" style="--d:.75s">
+          Premium equipment, expert guidance and a diet plan built for you.
+          Strength, cardio, fat loss and muscle building, all under one roof.
+        </p>
+        <div class="hero__actions reveal-hero" style="--d:.9s">
+          <a href="#" class="btn btn--red btn--lg js-wa magnetic" data-msg="Hi TORQ FITNESS! I'd like to book a FREE TRIAL session.">
+            <svg class="ico" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.03c-.25.69-1.44 1.32-1.99 1.37-.51.05-.99.23-3.34-.69-2.82-1.11-4.6-4-4.74-4.18-.14-.19-1.13-1.5-1.13-2.87 0-1.36.71-2.03.97-2.31.25-.28.55-.35.74-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.11.3.02.48-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.88.9.28.14.46.21.53.32.07.12.07.66-.18 1.35z"/></svg>
+            Claim Free Trial
+          </a>
+          <a href="#plans" class="btn btn--ghost btn--lg magnetic">View Plans <span class="arrow">→</span></a>
+        </div>
+
+        <div class="hero__meta reveal-hero" style="--d:1.05s">
+          <div><strong>₹1399</strong><span>Plans from / month</span></div>
+          <div><strong>FREE</strong><span>Trial session</span></div>
+          <div><strong>6+</strong><span>Training programs</span></div>
+        </div>
+      </div>
+
+      <div class="hero__dots" id="heroDots"></div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>STRENGTH TRAINING</span><i>✦</i><span>CARDIO &amp; AEROBICS</span><i>✦</i><span>MUSCLE BUILDING</span><i>✦</i><span>FAT LOSS</span><i>✦</i><span>PERSONAL TRAINING</span><i>✦</i><span>DIET CHARTS</span><i>✦</i>
+        <span>STRENGTH TRAINING</span><i>✦</i><span>CARDIO &amp; AEROBICS</span><i>✦</i><span>MUSCLE BUILDING</span><i>✦</i><span>FAT LOSS</span><i>✦</i><span>PERSONAL TRAINING</span><i>✦</i><span>DIET CHARTS</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media reveal" data-reveal="left">
+          <div class="about__img about__img--main tilt">
+            <img src="assets/img/gym8.webp" alt="TORQ FITNESS branded t-shirt in the gym" loading="lazy" />
+          </div>
+          <div class="about__img about__img--float tilt">
+            <img src="assets/img/gym12.webp" alt="Member stretching on a stability ball" loading="lazy" />
+          </div>
+          <div class="about__badge">
+            <svg viewBox="0 0 200 200" class="about__badge-ring">
+              <defs><path id="circle" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"/></defs>
+              <text><textPath href="#circle">TORQ FITNESS • NO EXCUSES • SALKIA HOWRAH • </textPath></text>
+            </svg>
+            <span class="about__badge-core">TF</span>
+          </div>
+        </div>
+
+        <div class="about__text">
+          <p class="eyebrow reveal">Who we are</p>
+          <h2 class="title reveal">More than a gym.<br /><span class="text-red">A place to get stronger.</span></h2>
+          <p class="lead reveal">
+            TORQ FITNESS is Salkia's home for serious training. Bright, spacious floors with
+            city views, commercial-grade machines, free weights and a full cardio zone.
+            And a team that helps you train with purpose.
+          </p>
+          <ul class="checklist reveal">
+            <li>Fitness assessment for every new member</li>
+            <li>Personal exercise guidance on the floor</li>
+            <li>Diet consultation &amp; customised diet charts</li>
+            <li>Air-conditioned, well-ventilated training space</li>
+          </ul>
+
+          <div class="stats reveal">
+            <div class="stat"><strong class="counter" data-target="4">0</strong><span>Membership plans</span></div>
+            <div class="stat"><strong class="counter" data-target="6">0</strong><span>Training programs</span></div>
+            <div class="stat"><strong class="counter" data-target="6">0</strong><span>Free diet sessions*</span></div>
+          </div>
+          <p class="footnote reveal">*with the 12-month plan</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">What we offer</p>
+          <h2 class="title reveal">Train for <span class="text-red">every goal</span></h2>
+          <p class="lead reveal center">Whether you want to lose weight, build muscle or just feel better, we have a program for it.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service reveal" style="--i:0">
+            <div class="service__bg" style="background-image:url('assets/img/gym13.webp')"></div>
+            <span class="service__num">01</span>
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M6.5 6.5v11M17.5 6.5v11M3 9v6M21 9v6M6.5 12h11" /></svg></div>
+            <h3>Strength Training</h3>
+            <p>Racks, plate-loaded machines and free weights to build real, functional power.</p>
+          </article>
+          <article class="service reveal" style="--i:1">
+            <div class="service__bg" style="background-image:url('assets/img/gym3.webp')"></div>
+            <span class="service__num">02</span>
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4" /></svg></div>
+            <h3>Cardio &amp; Aerobics</h3>
+            <p>Commercial treadmills, air bikes, spin bikes and ellipticals for endurance and heart health.</p>
+          </article>
+          <article class="service reveal" style="--i:2">
+            <div class="service__bg" style="background-image:url('assets/img/gym16.png')"></div>
+            <span class="service__num">03</span>
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M7 14c-2 0-3-1.5-3-3.5S5.5 6 8 6c1 0 2 .5 2.5 1.5L12 10l1.5-2.5C14 6.5 15 6 16 6c2.5 0 4 2.5 4 4.5S19 14 17 14M7 14l2 6h6l2-6" /></svg></div>
+            <h3>Muscle Building</h3>
+            <p>Structured hypertrophy programs that put on lean size, with a plan that tracks progress.</p>
+          </article>
+          <article class="service reveal" style="--i:3">
+            <div class="service__bg" style="background-image:url('assets/img/gym1.webp')"></div>
+            <span class="service__num">04</span>
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M12 3c2 3 5 5 5 9a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-7.5z" /></svg></div>
+            <h3>Weight / Fat Loss</h3>
+            <p>Training and nutrition combined so you burn fat steadily and keep it off.</p>
+          </article>
+          <article class="service reveal" style="--i:4">
+            <div class="service__bg" style="background-image:url('assets/img/gym7.webp')"></div>
+            <span class="service__num">05</span>
+            <div class="service__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4" /><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" /></svg></div>
+            <h3>Personal Training</h3>
+            <p>One-on-one coaching with correct form, progressive overload and accountability every session.</p>
+          </article>
+          <article class="service reveal" style="--i:5">
+            <div class="service__bg" style="background-image:url('assets/img/gym12.webp')"></div>
+            <span class="service__num">06</span>
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M9 3h6v3H9zM6 5h12v16H6zM9 11h6M9 15h4" /></svg></div>
+            <h3>Customised Diet Chart</h3>
+            <p>A nutrition plan made for your body, routine and goal. Practical Indian food, no fads.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PLANS ===== -->
+    <section class="section plans" id="plans">
+      <div class="plans__glow"></div>
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Membership plans</p>
+          <h2 class="title reveal">Pick your plan. <span class="text-red">Start today.</span></h2>
+          <p class="lead reveal center">Pay less per month when you commit longer. Tap <b>Join on WhatsApp</b> and we'll get you started.</p>
+        </div>
+
+        <div class="plans__grid">
+          <article class="plan reveal" style="--i:0" data-plan="1 Month" data-price="1399">
+            <div class="plan__shine"></div>
+            <h3 class="plan__name">1 Month</h3>
+            <div class="plan__price">
+              <span class="plan__old">₹1,999</span>
+              <span class="plan__now"><small>₹</small>1,399</span>
+              <span class="plan__per">₹1,399 / month</span>
+            </div>
+            <span class="plan__save">Save ₹600</span>
+            <ul class="plan__list">
+              <li>Fitness Assessment</li>
+              <li>Exercise Guidance</li>
+              <li class="off">Diet Consultation</li>
+              <li class="off">Free Gift</li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--block js-plan">Join on WhatsApp</a>
+          </article>
+
+          <article class="plan reveal" style="--i:1" data-plan="3 Months" data-price="3699">
+            <div class="plan__shine"></div>
+            <h3 class="plan__name">3 Months</h3>
+            <div class="plan__price">
+              <span class="plan__old">₹4,200</span>
+              <span class="plan__now"><small>₹</small>3,699</span>
+              <span class="plan__per">≈ ₹1,233 / month</span>
+            </div>
+            <span class="plan__save">Save ₹501</span>
+            <ul class="plan__list">
+              <li>Fitness Assessment</li>
+              <li>Exercise Guidance</li>
+              <li>Diet Consultation</li>
+              <li class="gift">Free Gift</li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--block js-plan">Join on WhatsApp</a>
+          </article>
+
+          <article class="plan plan--popular reveal" style="--i:2" data-plan="6 Months" data-price="6699">
+            <div class="plan__tag">Most Popular</div>
+            <div class="plan__shine"></div>
+            <h3 class="plan__name">6 Months</h3>
+            <div class="plan__price">
+              <span class="plan__old">₹8,400</span>
+              <span class="plan__now"><small>₹</small>6,699</span>
+              <span class="plan__per">≈ ₹1,117 / month</span>
+            </div>
+            <span class="plan__save">Save ₹1,701</span>
+            <ul class="plan__list">
+              <li>Fitness Assessment</li>
+              <li>Exercise Guidance</li>
+              <li>Diet Consultation <em>(3 sessions)</em></li>
+              <li class="gift">Free Gift</li>
+            </ul>
+            <a href="#" class="btn btn--red btn--block js-plan">Join on WhatsApp</a>
+          </article>
+
+          <article class="plan plan--best reveal" style="--i:3" data-plan="12 Months" data-price="10999">
+            <div class="plan__tag plan__tag--gold">Best Value</div>
+            <div class="plan__shine"></div>
+            <h3 class="plan__name">12 Months</h3>
+            <div class="plan__price">
+              <span class="plan__old">₹16,800</span>
+              <span class="plan__now"><small>₹</small>10,999</span>
+              <span class="plan__per">≈ ₹917 / month</span>
+            </div>
+            <span class="plan__save">Save ₹5,801</span>
+            <ul class="plan__list">
+              <li>Fitness Assessment</li>
+              <li>Exercise Guidance</li>
+              <li>Diet Consultation <em>(6 sessions)</em></li>
+              <li class="gift">Free Gift</li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--block js-plan">Join on WhatsApp</a>
+          </article>
+        </div>
+
+        <div class="plans__note reveal">
+          <span>⚡ Admission fee: <b>₹800</b> extra (one-time)</span>
+          <span>🎁 <b>FREE TRIAL</b> available, so try us before you join</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESULTS ===== -->
+    <section class="section results" id="results">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <p class="eyebrow reveal">Built at TORQ</p>
+            <h2 class="title reveal">Real people.<br /><span class="text-red">Real results.</span></h2>
+          </div>
+          <p class="lead reveal">Discipline is built one rep at a time. These are our members, the proof of what consistent work, good coaching and the right diet can do.</p>
+        </div>
+
+        <div class="results__grid">
+          <figure class="result reveal" style="--i:0"><img src="assets/img/gym10.webp" alt="TORQ member physique" loading="lazy" /><figcaption><span>Shredded</span>Consistency pays</figcaption></figure>
+          <figure class="result reveal" style="--i:1"><img src="assets/img/gym16.png" alt="TORQ member back double biceps" loading="lazy" /><figcaption><span>Back Day</span>Built rep by rep</figcaption></figure>
+          <figure class="result reveal" style="--i:2"><img src="assets/img/gym15.png" alt="TORQ member muscular pose" loading="lazy" /><figcaption><span>Mass</span>Train · Eat · Recover</figcaption></figure>
+          <figure class="result reveal" style="--i:3"><img src="assets/img/gym14.png" alt="TORQ member mirror selfie" loading="lazy" /><figcaption><span>Grind</span>No shortcuts</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Inside TORQ</p>
+          <h2 class="title reveal">Take a <span class="text-red">look around</span></h2>
+          <p class="lead reveal center">Bright, spacious floors with plenty of natural light. Tap any photo to view it full size.</p>
+        </div>
+
+        <div class="gallery__grid" id="galleryGrid">
+          <a class="g-item reveal" href="assets/img/gym11.webp"><img src="assets/img/gym11.webp" alt="Main training floor" loading="lazy" /></a>
+          <a class="g-item reveal" href="assets/img/gym6.webp"><img src="assets/img/gym6.webp" alt="Squat rack and air bike area" loading="lazy" /></a>
+          <a class="g-item reveal" href="assets/img/gym13.webp"><img src="assets/img/gym13.webp" alt="Strength machines with city view" loading="lazy" /></a>
+          <a class="g-item reveal" href="assets/img/gym2.webp"><img src="assets/img/gym2.webp" alt="Strength zone with mural" loading="lazy" /></a>
+          <a class="g-item reveal" href="assets/img/gym5.webp"><img src="assets/img/gym5.webp" alt="Cable crossover and treadmills" loading="lazy" /></a>
+          <a class="g-item reveal" href="assets/img/gym9.webp"><img src="assets/img/gym9.webp" alt="Open floor with rig and treadmills" loading="lazy" /></a>
+          <a class="g-item reveal" href="assets/img/gym1.webp"><img src="assets/img/gym1.webp" alt="Cardio zone at night" loading="lazy" /></a>
+          <a class="g-item reveal" href="assets/img/gym3.webp"><img src="assets/img/gym3.webp" alt="Commercial treadmills" loading="lazy" /></a>
+          <a class="g-item reveal" href="assets/img/gym4.webp"><img src="assets/img/gym4.webp" alt="Cardio machines and pillars" loading="lazy" /></a>
+          <a class="g-item reveal" href="assets/img/gym7.webp"><img src="assets/img/gym7.webp" alt="Resistance band training" loading="lazy" /></a>
+          <a class="g-item reveal" href="assets/img/gym12.webp"><img src="assets/img/gym12.webp" alt="Stretching on a stability ball" loading="lazy" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BMI ===== -->
+    <section class="section bmi" id="bmi">
+      <div class="container bmi__grid">
+        <div class="bmi__text">
+          <p class="eyebrow reveal">Know your numbers</p>
+          <h2 class="title reveal">Check your <span class="text-red">BMI</span></h2>
+          <p class="lead reveal">Enter your height and weight to see where you stand. Then let our trainers build a plan to get you where you want to be.</p>
+          <div class="bmi__scale reveal">
+            <div><i style="background:#3fa9f5"></i>Under 18.5 · Underweight</div>
+            <div><i style="background:#2ecc71"></i>18.5 to 24.9 · Healthy</div>
+            <div><i style="background:#f5b041"></i>25 to 29.9 · Overweight</div>
+            <div><i style="background:#e3182d"></i>30+ · Obese</div>
+          </div>
+        </div>
+
+        <form class="bmi__card reveal" id="bmiForm" data-reveal="right">
+          <div class="field">
+            <label for="height">Height <span>(cm)</span></label>
+            <input type="number" id="height" min="100" max="250" placeholder="e.g. 172" required />
+          </div>
+          <div class="field">
+            <label for="weight">Weight <span>(kg)</span></label>
+            <input type="number" id="weight" min="25" max="300" step="0.1" placeholder="e.g. 70" required />
+          </div>
+          <button type="submit" class="btn btn--red btn--block">Calculate BMI</button>
+
+          <div class="bmi__result" id="bmiResult">
+            <div class="gauge">
+              <svg viewBox="0 0 200 110">
+                <path d="M15 100 A85 85 0 0 1 185 100" class="gauge__track" />
+                <path d="M15 100 A85 85 0 0 1 185 100" class="gauge__fill" id="gaugeFill" />
+              </svg>
+              <div class="gauge__needle" id="gaugeNeedle"></div>
+              <div class="gauge__value"><strong id="bmiValue">--</strong><span id="bmiLabel">Your BMI</span></div>
+            </div>
+            <p class="bmi__tip" id="bmiTip">Fill in your details above.</p>
+            <a href="#" class="btn btn--ghost btn--block js-wa" id="bmiWa" data-msg="Hi TORQ FITNESS! I just checked my BMI on your website and would like a fitness plan.">Get my plan on WhatsApp</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta" id="trial">
+      <div class="cta__bg" data-parallax="0.25" style="background-image:url('assets/img/gym9.webp')"></div>
+      <div class="cta__overlay"></div>
+      <div class="container cta__content">
+        <p class="eyebrow eyebrow--light reveal">Free trial</p>
+        <h2 class="cta__title reveal">Start your training <span class="text-stroke">today</span></h2>
+        <p class="lead reveal center">Walk in, train with us, and see for yourself. Your first session is on us.</p>
+        <div class="cta__actions reveal">
+          <a href="#" class="btn btn--red btn--lg js-wa magnetic" data-msg="Hi TORQ FITNESS! I'd like to book a FREE TRIAL session.">Book Free Trial</a>
+          <a href="tel:+918336044261" class="btn btn--ghost btn--lg magnetic">Call 83360 44261</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow reveal">Get in touch</p>
+          <h2 class="title reveal">Visit or <span class="text-red">message us</span></h2>
+
+          <div class="info-cards">
+            <a class="info-card reveal" href="https://maps.google.com/?q=TORQ+FITNESS+Salkia+Howrah" target="_blank" rel="noopener">
+              <div class="info-card__icon"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+              <div><span>Location</span><strong>Salkia, Howrah, West Bengal</strong></div>
+            </a>
+            <a class="info-card reveal" href="tel:+918336044261">
+              <div class="info-card__icon"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></div>
+              <div><span>Call</span><strong>+91 83360 44261</strong></div>
+            </a>
+            <a class="info-card reveal" href="tel:+919874989937">
+              <div class="info-card__icon"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></div>
+              <div><span>Call</span><strong>+91 98749 89937</strong></div>
+            </a>
+            <a class="info-card info-card--wa reveal js-wa" href="#" data-msg="Hi TORQ FITNESS! I have a query.">
+              <div class="info-card__icon"><svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.5z"/></svg></div>
+              <div><span>WhatsApp</span><strong>Chat with us instantly</strong></div>
+            </a>
+          </div>
+
+          <div class="map reveal">
+            <iframe title="TORQ FITNESS location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=TORQ%20FITNESS%20Salkia%20Howrah&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+          </div>
+        </div>
+
+        <form class="enquiry reveal" id="enquiryForm" data-reveal="right" novalidate>
+          <h3>Send an enquiry</h3>
+          <p class="enquiry__sub">Your message opens directly in WhatsApp. Nothing is stored.</p>
+          <div class="field">
+            <label for="eName">Full name</label>
+            <input type="text" id="eName" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="ePhone">Phone</label>
+            <input type="tel" id="ePhone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required />
+          </div>
+          <div class="field">
+            <label for="eGoal">Your goal</label>
+            <select id="eGoal">
+              <option>Weight / Fat Loss</option>
+              <option>Muscle Building</option>
+              <option>Strength Training</option>
+              <option>Cardio &amp; Endurance</option>
+              <option>Personal Training</option>
+              <option>General Fitness</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="ePlan">Interested plan</label>
+            <div class="chips" id="planChips">
+              <button type="button" class="chip" data-v="Free Trial">Free Trial</button>
+              <button type="button" class="chip" data-v="1 Month">1 Month</button>
+              <button type="button" class="chip" data-v="3 Months">3 Months</button>
+              <button type="button" class="chip is-on" data-v="6 Months">6 Months</button>
+              <button type="button" class="chip" data-v="12 Months">12 Months</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="eMsg">Message <span>(optional)</span></label>
+            <textarea id="eMsg" rows="3" placeholder="Preferred timing, questions..."></textarea>
+          </div>
+          <p class="form-error" id="formError"></p>
+          <button type="submit" class="btn btn--wa btn--block btn--lg">
+            <svg class="ico" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.03c-.25.69-1.440 1.32-1.99 1.37-.51.05-.99.23-3.34-.69-2.82-1.11-4.6-4-4.74-4.18-.14-.19-1.130-1.5-1.13-2.87 0-1.36.71-2.03.97-2.31.25-.28.55-.35.74-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.11.3.02.48-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.88.9.28.14.46.21.53.32.07.12.07.66-.18 1.35z"/></svg>
+            Send on WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true">TORQ</div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo-transparent.png" alt="TORQ FITNESS" class="footer__logo" />
+        <p>Strength, cardio, muscle building and fat loss, with expert guidance and customised diet charts. Salkia, Howrah.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#about">About</a><a href="#services">Services</a><a href="#plans">Plans</a><a href="#gallery">Gallery</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+918336044261">+91 83360 44261</a>
+        <a href="tel:+919874989937">+91 98749 89937</a>
+        <a href="#" class="js-wa" data-msg="Hi TORQ FITNESS!">WhatsApp</a>
+      </div>
+      <div>
+        <h4>Train with us</h4>
+        <p>Your first session is free.</p>
+        <a href="#" class="btn btn--red js-wa" data-msg="Hi TORQ FITNESS! I'd like to book a FREE TRIAL session.">Book Free Trial</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> TORQ FITNESS. All rights reserved.</span>
+      <a href="#home" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- floating WhatsApp -->
+  <a href="#" class="wa-float js-wa" data-msg="Hi TORQ FITNESS! I'd like to know more about your membership plans." aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.910-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.03c-.25.69-1.44 1.32-1.99 1.37-.51.05-.99.23-3.34-.69-2.82-1.11-4.6-4-4.74-4.18-.14-.19-1.13-1.5-1.13-2.87 0-1.36.71-2.03.97-2.31.25-.28.55-.35.74-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.11.3.02.48-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.88.9.28.14.46.21.53.32.07.12.07.66-.18 1.35z"/></svg>
+    <span class="wa-float__tip">Chat with us</span>
+  </a>
+
+  <!-- lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__prev" id="lbPrev" aria-label="Previous">‹</button>
+    <img id="lbImg" alt="" />
+    <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="Next">›</button>
+    <span class="lightbox__count" id="lbCount"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
