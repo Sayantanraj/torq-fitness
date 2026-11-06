@@ -607,8 +607,16 @@ body.is-ready .reveal-hero { animation: fadeUp 1s var(--ease) forwards; animatio
   .hero__meta span { font-size: 11px; line-height: 1.35; }
   .hero__scroll { display: none; }
 
-  .services__grid, .plans__grid { grid-template-columns: 1fr; }
-  .service { min-height: 240px; }
+  .plans__grid { grid-template-columns: 1fr; }
+  /* services: 2 compact cards per row */
+  .services__grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .service { min-height: 0; padding: 18px 14px 18px; border-radius: 14px; }
+  .service__num { top: 12px; right: 12px; font-size: 30px; }
+  .service__icon { width: 42px; height: 42px; border-radius: 12px; }
+  .service__icon svg { width: 21px; height: 21px; }
+  .service h3 { font-size: 18px; line-height: 1.15; margin: 18px 0 6px; }
+  .service p { font-size: 12.5px; line-height: 1.5; }
+  .service:hover { transform: translateY(-4px); }
   .results__grid { gap: 12px; }
   .result:nth-child(even) { margin-top: 30px; }
   .result figcaption span { font-size: 22px; }
